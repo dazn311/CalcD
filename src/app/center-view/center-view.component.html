@@ -1,0 +1,9 @@
+<div id="centerViev" translate="no" >
+
+  <div id="{{btn.id}}" *ngFor="let btn of btnsCenter; let i = index;" [className]="btn.class" (click)="addNum(btn.title)">
+    <a   [class]="(btn.title != ',') && (btn.title != '(') ? 'ball greenball' : 'ball yellowball'">
+      <div class="menuText">{{ btn.title }}</div>
+    </a>
+  </div>
+
+</div>

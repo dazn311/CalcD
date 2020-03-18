@@ -1,0 +1,8 @@
+<div id="{{ item.id }}" *ngFor="let item of num.topButtons; let i = index"
+     class="menuBall2"
+     [ngClass]="item.visible == true ? 'display' : 'notdisplay'"
+     (click)="closess(item.id)"          >
+  <a   *ngIf="item.visible" class="ball2"  >
+    <div class="menuText2">{{ item.title }}</div>
+  </a>
+</div>
