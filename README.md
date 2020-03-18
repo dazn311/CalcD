@@ -1,2 +1,0 @@
-# CalcD
-Calculator (Angular)
